@@ -10,5 +10,5 @@ def fromJson(file_path: str)->dict:
     
     """
     f=open(file_path, encoding="utf8").read()
-    data=json.loads(f)
-    return data
+    dic=json.loads(f)
+    return dic
