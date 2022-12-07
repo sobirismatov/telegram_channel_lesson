@@ -16,7 +16,9 @@ def get_post_month(data:dict,month:int)->int:
     b=0
     for i in data:
         if i['type']=='message':
-            b+=int(i['date'][5:7]) == month
+            if int(i["date"][5:7])==month:
+                b+=1
+         
     return b
-print(get_post_month(data,5))
+print(get_post_month(data,9))
         
