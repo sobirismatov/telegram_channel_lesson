@@ -11,5 +11,6 @@ def get_number_of_posts(data:dict)->int:
         int: the number of posts for the given dictionary
     """
     data=data["messages"]
+    
     return len(data)
 print(get_number_of_posts(data))
